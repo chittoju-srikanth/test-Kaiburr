@@ -7,7 +7,7 @@ node('node') {
 
        stage('Checkout'){
 
-          checkout https://github.com/sahat/hackathon-starter.git
+          git([url: 'https://github.com/sahat/hackathon-starter.git myproject', branch: 'master', credentialsId: '12345-1234-4696-af25-123455'])
        }
 
        stage('Test'){
